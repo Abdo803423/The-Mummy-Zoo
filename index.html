@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="zoo.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Mummy | Zoo</title>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="site-header">
+    <div id="navbar">
+      <p class="logo">Mummy<span>Zoo</span></p>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home"    class="active">Home</a></li>
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#video">Watch</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#ticket" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <div class="landing" id="home">
+    <div class="container">
+      <div class="video">
+        <video autoplay muted loop playsinline>
+          <source src="landing.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h1>Welcome to Mummy Zoo</h1>
+      <p>The Fun of Nature</p>
+      <a href="#ticket" class="btn btn-primary">Book Your Visit</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ========== LEARN ========== -->
+    <section id="learn">
+      <!-- Full-bleed animal image toggled by JS -->
+      <div id="learn-bg" aria-hidden="true"></div>
+
+      <div class="containerb">
+        <div class="container">
+          <ul>
+            <li data-img="Angry Tiger II Concept Art - Md Siddique.jpg">
+              <a href="#">Tiger</a>
+            </li>
+            <li data-img="Lion.jpg">
+              <a href="#">Lion</a>
+            </li>
+            <li data-img="Jaguar irritado na floresta tropical _ imagem Premium gerada com IA.jpg">
+              <a href="#">Jaguar</a>
+            </li>
+            <li data-img="cheetah.jpg">
+              <a href="#">Cheetah</a>
+            </li>
+            <li data-img="Close-up of a Leopard wallpaper HD 4K free download for Desktop laptop and Phone.jpg">
+              <a href="#">Leopard</a>
+            </li>
+            <li data-img="Fierce cougar.jpg">
+              <a href="#">Puma</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S NEW ========== -->
+    <!--
+      --quantity: total number of .item cards (7)
+      Each card uses --position: 1..7 for staggered delay
+    -->
+    <div class="What reveal">
+      <h1>What's New</h1>
+      <div class="slider" style="--quantity: 7;">
+        <div class="list">
+          <div class="item" style="--position: 1;">
+            <img src="Oops!.jpg" alt="Wildlife photo" loading="lazy">
+          </div>
+          <div class="item" style="--position: 2;">
+            <img src="Elephant _ Gentle Giant!.jpg" alt="Elephant" loading="lazy">
+          </div>
+          <div class="item" style="--position: 3;">
+            <img src="Madagascar_  The country's most famous animal is….jpg" alt="Madagascar animal" loading="lazy">
+          </div>
+          <div class="item" style="--position: 4;">
+            <img src="Digital national geographic realistic illustration with stunning scene _ Premium AI-generated image (1).jpg" alt="Wildlife illustration" loading="lazy">
+          </div>
+          <div class="item" style="--position: 5;">
+            <img src="bird anime Animals and Pet Supplies Pet Health dogs  dog wallpaper dog aesthetic dog tattoo ideas (1).jpg" alt="Animals" loading="lazy">
+          </div>
+          <div class="item" style="--position: 6;">
+            <img src="Breathtaking Portraits of Wild Animals by Kevin Biskaborn (1).jpg" alt="Wild animal portrait" loading="lazy">
+          </div>
+          <div class="item" style="--position: 7;">
+            <img src="Retrato de leão em fundo escuro AI Generative _ imagem Premium gerada com IA.jpg" alt="Lion portrait" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== VIDEO ========== -->
+    <section id="video">
+      <div class="containerb">
+        <div class="container reveal">
+          <div class="video">
+            <h2>Do You Love Animals?</h2>
+            <video src="nature.mp4" controls
+              poster="Magical Fox Wallpapers Hd.jpg"
+              preload="metadata">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BOOKING ========== -->
+    <section id="ticket">
+      <div class="containerb reveal">
+        <div class="container">
+          <h2 style="text-align:center; margin-bottom:28px;
+                     font-size:clamp(1.4rem,3vw,2rem); color:var(--white);">
+            Book Your <span style="color:var(--blue);">Visit</span>
+          </h2>
+          <form id="booking-form" action="" onsubmit="return false;">
+            <label for="visitor-name">Your Name</label>
+            <input type="text"  id="visitor-name" placeholder="e.g. Ahmed Hassan" autocomplete="name">
+
+            <label for="visitor-email">Your Email</label>
+            <input type="email" id="visitor-email" placeholder="you@example.com" autocomplete="email">
+
+            <label for="visit-date">Visit Date</label>
+            <input type="date"  id="visit-date">
+
+            <button type="submit" id="book-btn">Book Now &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="containerb">
+        <div class="contact-content reveal">
+          <div class="contact-info">
+            <h3>Address</h3>
+            <p><i class="fa-solid fa-location-dot"></i> New Fayoum, Fayoum, Egypt</p>
+            <p><i class="fa-solid fa-phone"></i> +20 101 127 4897</p>
+            <p><i class="fa-solid fa-envelope"></i> Support@MummyZoo.com</p>
+          </div>
+          <div>
+            <h3>Working Hours</h3>
+            <p><i class="fa-regular fa-clock"></i> 8:00 am – 7:00 pm (Weekdays)</p>
+            <p><i class="fa-regular fa-clock"></i> 11:00 am – 3:00 pm (Weekends)</p>
+          </div>
+          <div class="social">
+            <h3>Follow Us</h3>
+            <div class="social-icon">
+              <a href="#" aria-label="Facebook">   <p><i class="fa-brands fa-facebook"></i></p></a>
+              <a href="#" aria-label="Instagram">  <p><i class="fa-brands fa-instagram"></i></p></a>
+              <a href="#" aria-label="Twitter">    <p><i class="fa-brands fa-twitter"></i></p></a>
+              <a href="#" aria-label="LinkedIn">   <p><i class="fa-brands fa-linkedin"></i></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="containerb">
+      <span>&#169;</span> 2024 MummyZoo — All rights reserved by Abdelrahman Adel
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+  (function () {
+
+    /* ── Sticky header ── */
+    const hdr = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      hdr.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* ── Active nav link on scroll ── */
+    const navLinks = document.querySelectorAll('#main-nav a:not(.nav-cta)');
+    const sections = document.querySelectorAll('section[id], div.landing[id]');
+
+    const secObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(a => a.classList.remove('active'));
+        const match = document.querySelector(
+          `#main-nav a[href="#${entry.target.id}"]`
+        );
+        if (match) match.classList.add('active');
+      });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+
+    sections.forEach(s => secObs.observe(s));
+
+    /* ── Hamburger ── */
+    const burger = document.getElementById('hamburger');
+    const nav    = document.getElementById('main-nav');
+
+    burger.addEventListener('click', () => {
+      const open = burger.classList.toggle('open');
+      nav.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+
+    /* Close on nav link click */
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* Close on outside click */
+    document.addEventListener('click', e => {
+      if (!hdr.contains(e.target)) {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    /* ── Learn: swap animal background ── */
+    const learnBg    = document.getElementById('learn-bg');
+    const animalLis  = document.querySelectorAll('#learn ul li[data-img]');
+    let   hideTimer  = null;
+
+    animalLis.forEach(li => {
+      li.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimer);
+        /* preload for instant swap */
+        const img = new Image();
+        img.src = li.dataset.img;
+        learnBg.style.backgroundImage = `url("${li.dataset.img}")`;
+        learnBg.classList.add('visible');
+      });
+      li.addEventListener('mouseleave', () => {
+        /* small delay so there's no flash between items */
+        hideTimer = setTimeout(() => learnBg.classList.remove('visible'), 120);
+      });
+    });
+
+    /* ── Scroll reveal ── */
+    const reveals   = document.querySelectorAll('.reveal');
+    const revObs    = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        revObs.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => revObs.observe(el));
+
+    /* ── Booking form feedback ── */
+    const form    = document.getElementById('booking-form');
+    const bookBtn = document.getElementById('book-btn');
+    if (form && bookBtn) {
+      form.addEventListener('submit', () => {
+        bookBtn.textContent       = '✓ Booked!';
+        bookBtn.style.background  = '#16a34a';
+        bookBtn.style.borderColor = '#16a34a';
+        setTimeout(() => {
+          bookBtn.textContent       = 'Book Now →';
+          bookBtn.style.background  = '';
+          bookBtn.style.borderColor = '';
+          form.reset();
+        }, 2800);
+      });
+    }
+
+  })();
+  </script>
+
+</body>
+</html>
