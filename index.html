@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="zoo.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>Mummy | Zoo</title>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="site-header">
+    <div id="navbar">
+      <p class="logo">Mummy<span>Zoo</span></p>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home"    class="active">Home</a></li>
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#video">Watch</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#ticket" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <div class="landing" id="home">
+    <div class="container">
+      <div class="video">
+        <video autoplay muted loop playsinline>
+          <source src="landing.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h1>Welcome to Mummy Zoo</h1>
+      <p>The Fun of Nature</p>
+      <a href="#ticket" class="btn btn-primary">Book Your Visit</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ========== LEARN ========== -->
+    <section id="learn">
+      <div id="learn-bg" aria-hidden="true"></div>
+      <div class="containerb">
+        <div class="container">
+          <ul>
+            <li data-img="Angry Tiger II Concept Art - Md Siddique.jpg">
+              <a href="#">Tiger</a>
+            </li>
+            <li data-img="Lion.jpg">
+              <a href="#">Lion</a>
+            </li>
+            <li data-img="Jaguar irritado na floresta tropical _ imagem Premium gerada com IA.jpg">
+              <a href="#">Jaguar</a>
+            </li>
+            <li data-img="cheetah.jpg">
+              <a href="#">Cheetah</a>
+            </li>
+            <li data-img="Close-up of a Leopard wallpaper HD 4K free download for Desktop laptop and Phone.jpg">
+              <a href="#">Leopard</a>
+            </li>
+            <li data-img="Fierce cougar.jpg">
+              <a href="#">Puma</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S NEW - FULLY RESPONSIVE SLIDER ========== -->
+    <div class="What reveal">
+      <h1>What's New</h1>
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="slider-track">
+            <!-- Original slides with captions -->
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="Oops!.jpg" alt="Wildlife photo" loading="lazy">
+                <div class="slide-caption">Wild Encounter</div>
+              </div>
+            </div>
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="Elephant _ Gentle Giant!.jpg" alt="Elephant" loading="lazy">
+                <div class="slide-caption">Gentle Giant</div>
+              </div>
+            </div>
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="Madagascar_  The country's most famous animal is….jpg" alt="Madagascar animal" loading="lazy">
+                <div class="slide-caption">Island Life</div>
+              </div>
+            </div>
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="Digital national geographic realistic illustration with stunning scene _ Premium AI-generated image (1).jpg" alt="Wildlife illustration" loading="lazy">
+                <div class="slide-caption">Digital Wilderness</div>
+              </div>
+            </div>
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="bird anime Animals and Pet Supplies Pet Health dogs  dog wallpaper dog aesthetic dog tattoo ideas (1).jpg" alt="Animals" loading="lazy">
+                <div class="slide-caption">Feathered Friends</div>
+              </div>
+            </div>
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="Breathtaking Portraits of Wild Animals by Kevin Biskaborn (1).jpg" alt="Wild animal portrait" loading="lazy">
+                <div class="slide-caption">Wild Portraits</div>
+              </div>
+            </div>
+            <div class="slider-slide">
+              <div class="slide-content">
+                <img src="Retrato de leão em fundo escuro AI Generative _ imagem Premium gerada com IA.jpg" alt="Lion portrait" loading="lazy">
+                <div class="slide-caption">King of Beasts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation buttons - visible on all devices -->
+        <button class="slider-nav prev" aria-label="Previous slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-nav next" aria-label="Next slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Dots navigation -->
+        <div class="slider-dots"></div>
+      </div>
+    </div>
+
+    <!-- ========== VIDEO ========== -->
+    <section id="video">
+      <div class="containerb">
+        <div class="container reveal">
+          <div class="video">
+            <h2>Do You Love Animals?</h2>
+            <video src="nature .mp4" controls
+              poster="Magical Fox Wallpapers Hd.jpg"
+              preload="metadata">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BOOKING ========== -->
+    <section id="ticket">
+      <div class="containerb reveal">
+        <div class="container">
+          <h2 style="text-align:center; margin-bottom:28px;
+                     font-size:clamp(1.4rem,3vw,2rem); color:var(--white);">
+            Book Your <span style="color:var(--blue);">Visit</span>
+          </h2>
+          <form id="booking-form" action="" onsubmit="return false;">
+            <label for="visitor-name">Your Name</label>
+            <input type="text"  id="visitor-name" placeholder="e.g. Ahmed Hassan" autocomplete="name">
+
+            <label for="visitor-email">Your Email</label>
+            <input type="email" id="visitor-email" placeholder="you@example.com" autocomplete="email">
+
+            <label for="visit-date">Visit Date</label>
+            <input type="date"  id="visit-date">
+
+            <button type="submit" id="book-btn">Book Now &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="containerb">
+        <div class="contact-content reveal">
+          <div class="contact-info">
+            <h3>Address</h3>
+            <p><i class="fa-solid fa-location-dot"></i> New Fayoum, Fayoum, Egypt</p>
+            <p><i class="fa-solid fa-phone"></i> +20 101 127 4897</p>
+            <p><i class="fa-solid fa-envelope"></i> Support@MummyZoo.com</p>
+          </div>
+          <div>
+            <h3>Working Hours</h3>
+            <p><i class="fa-regular fa-clock"></i> 8:00 am – 7:00 pm (Weekdays)</p>
+            <p><i class="fa-regular fa-clock"></i> 11:00 am – 3:00 pm (Weekends)</p>
+          </div>
+          <div class="social">
+            <h3>Follow Us</h3>
+            <div class="social-icon">
+              <a href="#" aria-label="Facebook">   <p><i class="fa-brands fa-facebook"></i></p></a>
+              <a href="#" aria-label="Instagram">  <p><i class="fa-brands fa-instagram"></i></p></a>
+              <a href="#" aria-label="Twitter">    <p><i class="fa-brands fa-twitter"></i></p></a>
+              <a href="#" aria-label="LinkedIn">   <p><i class="fa-brands fa-linkedin"></i></p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="containerb">
+      <span>&#169;</span> 2024 MummyZoo — All rights reserved by Abdelrahman Adel
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+  (function () {
+
+    /* ── Sticky header ── */
+    const hdr = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      hdr.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* ── Active nav link on scroll ── */
+    const navLinks = document.querySelectorAll('#main-nav a:not(.nav-cta)');
+    const sections = document.querySelectorAll('section[id], div.landing[id]');
+
+    const secObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(a => a.classList.remove('active'));
+        const match = document.querySelector(
+          `#main-nav a[href="#${entry.target.id}"]`
+        );
+        if (match) match.classList.add('active');
+      });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+
+    sections.forEach(s => secObs.observe(s));
+
+    /* ── Hamburger ── */
+    const burger = document.getElementById('hamburger');
+    const nav    = document.getElementById('main-nav');
+
+    burger.addEventListener('click', () => {
+      const open = burger.classList.toggle('open');
+      nav.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('click', e => {
+      if (!hdr.contains(e.target)) {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    /* ── Learn background ── */
+    const learnBg    = document.getElementById('learn-bg');
+    const animalLis  = document.querySelectorAll('#learn ul li[data-img]');
+    let   hideTimer  = null;
+
+    animalLis.forEach(li => {
+      li.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimer);
+        const img = new Image();
+        img.src = li.dataset.img;
+        learnBg.style.backgroundImage = `url("${li.dataset.img}")`;
+        learnBg.classList.add('visible');
+      });
+      li.addEventListener('mouseleave', () => {
+        hideTimer = setTimeout(() => learnBg.classList.remove('visible'), 120);
+      });
+    });
+
+    /* ── Scroll reveal ── */
+    const reveals   = document.querySelectorAll('.reveal');
+    const revObs    = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        revObs.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => revObs.observe(el));
+
+    /* ── Booking form ── */
+    const form    = document.getElementById('booking-form');
+    const bookBtn = document.getElementById('book-btn');
+    if (form && bookBtn) {
+      form.addEventListener('submit', () => {
+        bookBtn.textContent       = '✓ Booked!';
+        bookBtn.style.background  = '#16a34a';
+        bookBtn.style.borderColor = '#16a34a';
+        setTimeout(() => {
+          bookBtn.textContent       = 'Book Now →';
+          bookBtn.style.background  = '';
+          bookBtn.style.borderColor = '';
+          form.reset();
+        }, 2800);
+      });
+    }
+
+    /* ── FULLY RESPONSIVE INFINITE SLIDER ── */
+    const initSlider = () => {
+      const sliderTrack = document.querySelector('.slider-track');
+      const slides = document.querySelectorAll('.slider-slide');
+      const prevBtn = document.querySelector('.slider-nav.prev');
+      const nextBtn = document.querySelector('.slider-nav.next');
+      const dotsContainer = document.querySelector('.slider-dots');
+      
+      if (!sliderTrack || slides.length === 0) return;
+      
+      // Responsive configuration based on screen size
+      const getConfig = () => {
+        const width = window.innerWidth;
+        return {
+          slidesToShow: width <= 480 ? 1 : (width <= 768 ? 2 : 3),
+          slideWidth: width <= 480 ? 260 : (width <= 768 ? 240 : 270),
+          slideGap: width <= 480 ? 15 : 20,
+          autoPlayDelay: width <= 768 ? 5000 : 4000,
+          slideHeight: width <= 480 ? 280 : (width <= 768 ? 300 : 350)
+        };
+      };
+      
+      let config = getConfig();
+      const totalOriginalSlides = slides.length;
+      let currentIndex = 0;
+      let autoSlideInterval;
+      let isTransitioning = false;
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      // Clear existing clones
+      document.querySelectorAll('.slider-slide.clone').forEach(clone => clone.remove());
+      
+      // Clone slides for infinite effect
+      const slidesArray = Array.from(slides);
+      
+      // Clone first few slides and append to end
+      for (let i = 0; i < config.slidesToShow; i++) {
+        const clone = slidesArray[i].cloneNode(true);
+        clone.classList.add('clone');
+        sliderTrack.appendChild(clone);
+      }
+      
+      // Clone last few slides and prepend to beginning
+      for (let i = totalOriginalSlides - config.slidesToShow; i < totalOriginalSlides; i++) {
+        const clone = slidesArray[i].cloneNode(true);
+        clone.classList.add('clone');
+        sliderTrack.insertBefore(clone, sliderTrack.firstChild);
+      }
+      
+      // Update all slides collection
+      const allSlides = document.querySelectorAll('.slider-slide');
+      const totalSlides = allSlides.length;
+      
+      // Set initial position
+      currentIndex = config.slidesToShow;
+      updateSliderPosition(false);
+      
+      // Create dots
+      if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalOriginalSlides; i++) {
+          const dot = document.createElement('button');
+          dot.classList.add('slider-dot');
+          dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+          dot.addEventListener('click', (e) => {
+            e.preventDefault();
+            goToSlide(i);
+            resetAutoSlide();
+          });
+          dotsContainer.appendChild(dot);
+        }
+        updateDots();
+      }
+      
+      // Functions
+      function goToSlide(index, animate = true) {
+        if (isTransitioning) return;
+        isTransitioning = animate;
+        
+        currentIndex = index + config.slidesToShow;
+        updateSliderPosition(animate);
+        updateDots();
+        
+        if (animate) {
+          setTimeout(() => {
+            isTransitioning = false;
+          }, 500);
+        } else {
+          isTransitioning = false;
+        }
+      }
+      
+      function nextSlide() {
+        if (isTransitioning) return;
+        
+        currentIndex++;
+        updateSliderPosition(true);
+        
+        // Check if we've reached the end
+        if (currentIndex >= totalSlides - config.slidesToShow) {
+          setTimeout(() => {
+            currentIndex = config.slidesToShow;
+            updateSliderPosition(false);
+          }, 500);
+        }
+        
+        updateDots();
+      }
+      
+      function prevSlide() {
+        if (isTransitioning) return;
+        
+        currentIndex--;
+        updateSliderPosition(true);
+        
+        // Check if we've reached the beginning
+        if (currentIndex < config.slidesToShow) {
+          setTimeout(() => {
+            currentIndex = totalSlides - config.slidesToShow * 2;
+            updateSliderPosition(false);
+          }, 500);
+        }
+        
+        updateDots();
+      }
+      
+      function updateSliderPosition(animate = true) {
+        if (animate) {
+          sliderTrack.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        } else {
+          sliderTrack.style.transition = 'none';
+        }
+        
+        const offset = -currentIndex * (config.slideWidth + config.slideGap);
+        sliderTrack.style.transform = `translateX(${offset}px)`;
+      }
+      
+      function updateDots() {
+        if (!dotsContainer) return;
+        
+        let originalIndex = currentIndex - config.slidesToShow;
+        
+        if (originalIndex < 0) {
+          originalIndex = totalOriginalSlides + originalIndex;
+        } else if (originalIndex >= totalOriginalSlides) {
+          originalIndex = originalIndex - totalOriginalSlides;
+        }
+        
+        const dots = dotsContainer.querySelectorAll('.slider-dot');
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === originalIndex);
+        });
+      }
+      
+      // Auto slide functions
+      function startAutoSlide() {
+        stopAutoSlide();
+        autoSlideInterval = setInterval(nextSlide, config.autoPlayDelay);
+      }
+      
+      function stopAutoSlide() {
+        if (autoSlideInterval) {
+          clearInterval(autoSlideInterval);
+        }
+      }
+      
+      function resetAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+      }
+      
+      // Event listeners
+      if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          prevSlide();
+          resetAutoSlide();
+        });
+        
+        nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          nextSlide();
+          resetAutoSlide();
+        });
+      }
+      
+      // Touch events for mobile
+      sliderTrack.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoSlide();
+      }, { passive: true });
+      
+      sliderTrack.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+      }, { passive: false });
+      
+      sliderTrack.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoSlide();
+      }, { passive: true });
+      
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+        }
+      }
+      
+      // Pause on hover (desktop only)
+      if (window.innerWidth > 768) {
+        const sliderContainer = document.querySelector('.slider-container');
+        if (sliderContainer) {
+          sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+          sliderContainer.addEventListener('mouseleave', startAutoSlide);
+        }
+      }
+      
+      // Handle resize
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          const newConfig = getConfig();
+          if (newConfig.slidesToShow !== config.slidesToShow || 
+              newConfig.slideWidth !== config.slideWidth) {
+            config = newConfig;
+            
+            // Reinitialize slider with new config
+            document.querySelectorAll('.slider-slide.clone').forEach(clone => clone.remove());
+            initSlider();
+          }
+        }, 250);
+      });
+      
+      // Start auto slide
+      startAutoSlide();
+    };
+    
+    // Initialize slider when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSlider);
+    } else {
+      initSlider();
+    }
+
+  })();
+  </script>
+
+  <!-- ========== FULLY RESPONSIVE SLIDER CSS ========== -->
+  <style>
+  /* What's New Slider - Fully Responsive */
+  .What {
+    position: relative;
+    margin: 28px 18px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #0b3458, #0a2a44);
+    border: 3px solid rgba(7,159,224,0.2);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    height: auto;
+    min-height: 580px;
+  }
+  
+  .What::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top,
+      rgba(7,159,224,0.15) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .What h1 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 26px 20px 10px;
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #f8aa0f;
+    text-shadow: 0 2px 10px rgba(248,170,15,0.3);
+    margin: 0;
+  }
+  
+  .What h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #f8aa0f, transparent);
+    margin: 12px auto 0;
+    border-radius: 2px;
+  }
+  
+  .slider-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 15px 0 40px;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  
+  .slider-track {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    will-change: transform;
+    align-items: center;
+  }
+  
+  .slider-slide {
+    flex: 0 0 250px;
+    transition: all 0.4s ease;
+    opacity: 0.8;
+  }
+  
+  .slide-content {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid rgba(7,159,224,0.3);
+    transition: all 0.4s ease;
+  }
+  
+  .slide-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+  }
+  
+  .slider-slide:hover {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  
+  .slider-slide:hover .slide-content {
+    border-color: #079fe0;
+    box-shadow: 0 20px 40px rgba(7,159,224,0.4);
+  }
+  
+  .slider-slide:hover img {
+    transform: scale(1.1);
+  }
+  
+  .slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 10px 10px;
+    background: linear-gradient(to top, rgba(1,25,45,0.95), transparent);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(7,159,224,0.3);
+  }
+  
+  .slider-slide:hover .slide-caption {
+    transform: translateY(0);
+  }
+  
+  /* Navigation buttons */
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(7,159,224,0.2);
+    border: 2px solid #079fe0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slider-nav:hover,
+  .slider-nav:active {
+    background: #079fe0;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 0 25px #079fe0;
+  }
+  
+  .slider-nav.prev {
+    left: 15px;
+  }
+  
+  .slider-nav.next {
+    right: 15px;
+  }
+  
+  .slider-nav i {
+    font-size: 20px;
+  }
+  
+  /* Dots navigation */
+  .slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+    padding: 5px 10px;
+    background: rgba(1,25,45,0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slider-dot:hover,
+  .slider-dot:active {
+    background: rgba(7,159,224,0.5);
+    transform: scale(1.2);
+  }
+  
+  .slider-dot.active {
+    background: #079fe0;
+    transform: scale(1.3);
+    box-shadow: 0 0 15px #079fe0;
+    border-color: white;
+  }
+  
+  /* Mobile Phones (up to 480px) */
+  @media (max-width: 480px) {
+    .What {
+      margin: 10px 10px;
+      border-radius: 30px;
+      min-height: 450px;
+    }
+    
+    .What h1 {
+      font-size: 1.3rem;
+      padding: 20px 15px 5px;
+    }
+    
+    .What h1::after {
+      width: 60px;
+      height: 3px;
+    }
+    
+    .slider-container {
+      padding: 5px 0 35px;
+    }
+    
+    .slider-track {
+      gap: 15px;
+      padding: 0 10px;
+    }
+    
+    .slider-slide {
+      flex: 0 0 260px;
+    }
+    
+    .slide-content {
+      height: 280px;
+      border-radius: 16px;
+    }
+    
+    .slide-caption {
+      padding: 15px 8px 8px;
+      font-size: 0.9rem;
+    }
+    
+    .slider-nav {
+      width: 38px;
+      height: 38px;
+    }
+    
+    .slider-nav i {
+      font-size: 16px;
+    }
+    
+    .slider-nav.prev {
+      left: 8px;
+    }
+    
+    .slider-nav.next {
+      right: 8px;
+    }
+    
+    .slider-dots {
+      bottom: 10px;
+      gap: 8px;
+    }
+    
+    .slider-dot {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  /* Tablets (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .What {
+      margin: 15px 15px;
+      border-radius: 40px;
+      min-height: 500px;
+    }
+    
+    .What h1 {
+      font-size: 1.6rem;
+    }
+    
+    .slider-track {
+      gap: 18px;
+    }
+    
+    .slider-slide {
+      flex: 0 0 240px;
+    }
+    
+    .slide-content {
+      height: 300px;
+    }
+    
+    .slider-nav {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .slider-nav.prev {
+      left: 10px;
+    }
+    
+    .slider-nav.next {
+      right: 10px;
+    }
+  }
+  
+  /* Small Desktops (769px - 991px) */
+  @media (min-width: 769px) and (max-width: 991px) {
+    .slider-slide {
+      flex: 0 0 220px;
+    }
+    
+    .slide-content {
+      height: 320px;
+    }
+  }
+  
+  /* Large Screens (1400px+) */
+  @media (min-width: 1400px) {
+    .What {
+      max-width: 1400px;
+      margin: 28px auto;
+    }
+    
+    .slider-slide {
+      flex: 0 0 280px;
+    }
+    
+    .slide-content {
+      height: 380px;
+    }
+  }
+  
+  /* Landscape orientation for mobile */
+  @media (max-height: 500px) and (orientation: landscape) {
+    .What {
+      min-height: 350px;
+    }
+    
+    .slide-content {
+      height: 220px;
+    }
+    
+    .slider-container {
+      padding: 5px 0 30px;
+    }
+  }
+  
+  /* Touch device optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .slider-nav {
+      width: 44px;
+      height: 44px;
+      background: rgba(7,159,224,0.4);
+    }
+    
+    .slider-slide {
+      opacity: 1;
+    }
+    
+    .slide-caption {
+      transform: translateY(0);
+      background: linear-gradient(to top, rgba(1,25,45,0.85), rgba(1,25,45,0.4));
+      padding: 15px 8px 8px;
+    }
+  }
+  </style>
+
+</body>
+</html>
